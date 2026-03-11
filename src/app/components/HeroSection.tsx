@@ -64,7 +64,7 @@ export function HeroSection() {
           style={{ rotateX, rotateY, transformPerspective: 1200 }}
           className="flex flex-col items-center text-center"
         >
-          {/* Logo */}
+          {/* Logo
           <motion.div
             initial={{ opacity: 0, scale: 0.8, y: 30 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -76,7 +76,7 @@ export function HeroSection() {
               alt="Vila The Name Logo"
               className="h-24 sm:h-32 md:h-40 w-auto object-contain"
             />
-          </motion.div>
+          </motion.div> */}
 
           {/* Decorative line */}
           <motion.div
