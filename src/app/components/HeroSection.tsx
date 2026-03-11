@@ -109,9 +109,9 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
-            <span className="italic text-[#8b7043]">An Exclusive</span>
+            <span className="italic text-[#8b7043]">Villa</span>
             <br />
-            <span className="text-[#1a1a1a]">Retreat</span>
+            <span className="text-[#1a1a1a]">The Name</span>
           </motion.h1>
 
           {/* Sub text */}
