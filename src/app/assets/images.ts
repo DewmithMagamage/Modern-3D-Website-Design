@@ -1,7 +1,6 @@
 import logoPng from "@/app/assets/logo.png";
+import heroBg from "@/app/assets/Hero bg.png";
 
-export const VILLA_IMAGE =
-  "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1400&q=80";
-
+export const VILLA_IMAGE = heroBg;
 export const LOGO_IMAGE = logoPng;
 
