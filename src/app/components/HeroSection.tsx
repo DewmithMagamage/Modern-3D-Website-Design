@@ -42,8 +42,8 @@ export function HeroSection() {
       {/* Background Image with Parallax */}
       <motion.div className="absolute inset-0 w-full h-full" style={{ y, scale }}>
         <img src={VILLA_IMAGE} alt="Vila The Name" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/70 via-white/40 to-white/85" />
-        <div className="absolute inset-0 bg-gradient-to-r from-white/60 via-transparent to-white/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/50 to-white/85" />
+        <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-transparent to-white/40" />
       </motion.div>
 
       {/* Grain overlay */}
