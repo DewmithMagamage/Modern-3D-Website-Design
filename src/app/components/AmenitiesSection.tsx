@@ -17,7 +17,7 @@ const amenities = [
   {
     Icon: Waves,
     title: "Infinity Pool",
-    desc: "Two infinity pools with waterfall features and panoramic forest views",
+    desc: "Enjoy a refreshing swim in our stylish infinity pool featuring a soothing waterfall design for a relaxing stay.",
   },
   {
     Icon: BedDouble,
