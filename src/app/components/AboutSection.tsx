@@ -5,7 +5,7 @@ import { VILLA_IMAGE, LOGO_IMAGE } from "@/app/assets/images";
 
 const stats = [
   { value: "5", label: "Bedrooms", suffix: "" },
-  { value: "2", label: "Infinity Pools", suffix: "" },
+  { value: "1", label: "Infinity Pools", suffix: "" },
   { value: "1", label: "Acre", suffix: "+" },
   { value: "360", label: "Views", suffix: "°" },
 ];

@@ -30,11 +30,6 @@ const amenities = [
     desc: "Bespoke menus crafted daily with fresh local produce and global techniques",
   },
   {
-    Icon: Leaf,
-    title: "Wellness Spa",
-    desc: "Holistic treatments blending Ayurvedic tradition with modern luxury",
-  },
-  {
     Icon: Car,
     title: "Chauffeur",
     desc: "24/7 chauffeur service for seamless transfers and local exploration",
@@ -48,11 +43,6 @@ const amenities = [
     Icon: TreePine,
     title: "Nature Trails",
     desc: "Guided nature walks through the surrounding tropical forest and hills",
-  },
-  {
-    Icon: Film,
-    title: "Home Cinema",
-    desc: "State-of-the-art private cinema with curated film library",
   },
   {
     Icon: ShieldCheck,
