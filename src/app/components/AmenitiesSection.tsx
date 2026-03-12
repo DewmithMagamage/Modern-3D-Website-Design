@@ -4,11 +4,9 @@ import {
   Waves,
   BedDouble,
   ChefHat,
-  Leaf,
+  Building,
   Car,
-  Sunrise,
   TreePine,
-  Film,
   ShieldCheck,
   CalendarCheck,
 } from "lucide-react";
@@ -26,8 +24,8 @@ const amenities = [
   },
   {
     Icon: ChefHat,
-    title: "Private Chef",
-    desc: "Bespoke menus crafted daily with fresh local produce and global techniques",
+    title: "Fully Equipped Kitchen",
+    desc: "A modern kitchen equipped with essential appliances, allowing guests to prepare their own meals comfortably during their stay.",
   },
   {
     Icon: Car,
@@ -35,8 +33,8 @@ const amenities = [
     desc: "24/7 chauffeur service for seamless transfers and local exploration",
   },
   {
-    Icon: Sunrise,
-    title: "Sunrise Yoga",
+    Icon: Building,
+    title: "Spacious Rooftop",
     desc: "Daily sunrise yoga sessions on the panoramic terrace",
   },
   {
