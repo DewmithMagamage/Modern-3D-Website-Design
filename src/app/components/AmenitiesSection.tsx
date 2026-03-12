@@ -34,7 +34,7 @@ const amenities = [
   },
   {
     Icon: Building,
-    title: "Spacious Rooftop",
+    title: "Rooftop Terrace",
     desc: "Daily sunrise yoga sessions on the panoramic terrace",
   },
   {
