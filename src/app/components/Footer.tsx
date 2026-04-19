@@ -1,11 +1,12 @@
 import { motion } from "motion/react";
 import { MapPin, Mail, Phone, Instagram, Facebook, MessageCircle, ChevronUp } from "lucide-react";
 import { LOGO_IMAGE } from "@/app/assets/images";
+import { WHATSAPP_BUSINESS_NUMBER } from "@/app/config";
 
 const socialLinks = [
   { label: "Instagram", Icon: Instagram, href: "https://instagram.com" },
   { label: "Facebook", Icon: Facebook, href: "https://facebook.com" },
-  { label: "WhatsApp", Icon: MessageCircle, href: "https://wa.me/94770000000" },
+  { label: "WhatsApp", Icon: MessageCircle, href: `https://wa.me/${WHATSAPP_BUSINESS_NUMBER}` },
 ];
 
 const contactInfo = [
@@ -20,7 +21,7 @@ const navLinks = [
   { label: "Experiences", href: "#experiences" },
   { label: "Gallery", href: "#gallery" },
   { label: "Amenities", href: "#amenities" },
-  { label: "Rates", href: "#rates" },
+  { label: "Rooms", href: "#rooms" },
   { label: "Location", href: "#location" },
   { label: "Contact", href: "#contact" },
 ];

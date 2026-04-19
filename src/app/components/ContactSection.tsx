@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { motion, useInView } from "motion/react";
 import { MapPin, Mail, Phone, Clock, Sparkles, Send } from "lucide-react";
 import { LOGO_IMAGE } from "@/app/assets/images";
+import { whatsappSendUrl } from "@/app/config";
 
 const contactDetails = [
   { label: "Location", value: "Tropical Highlands, Sri Lanka", Icon: MapPin },
@@ -25,6 +26,23 @@ export function ContactSection() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const guestsLabel =
+      formState.guests === "10+" ? "10+" : `${formState.guests} guest(s)`;
+    const body = [
+      "New enquiry — Vila The Name",
+      "",
+      `Name: ${formState.name}`,
+      `Email: ${formState.email}`,
+      `Phone: ${formState.phone || "—"}`,
+      `Preferred dates: ${formState.dates || "—"}`,
+      `Guests: ${guestsLabel}`,
+      "",
+      "Special requests:",
+      formState.message || "—",
+    ].join("\n");
+
+    window.open(whatsappSendUrl(body), "_blank", "noopener,noreferrer");
+
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 4000);
     setFormState({ name: "", email: "", phone: "", dates: "", guests: "2", message: "" });
@@ -153,8 +171,8 @@ export function ContactSection() {
                     Thank You
                   </h3>
                   <p className="text-[#4a4a4a] text-sm max-w-sm" style={{ fontFamily: "'Inter', sans-serif" }}>
-                    Our concierge team will be in touch within 24 hours to curate your
-                    perfect stay at Vila The Name.
+                    WhatsApp should open with your details. If it did not, use the contact
+                    details on the left to reach us directly.
                   </p>
                   <div className="mt-6 h-px w-24 bg-[#b8935a]/50" />
                 </motion.div>
@@ -264,7 +282,7 @@ export function ContactSection() {
                     whileTap={{ scale: 0.99 }}
                   >
                     <Send className="w-3.5 h-3.5 relative z-10" />
-                    <span className="relative z-10">Send Enquiry</span>
+                    <span className="relative z-10">Send via WhatsApp</span>
                     <div className="absolute inset-0 bg-black/15 translate-y-full group-hover:translate-y-0 transition-transform duration-300 rounded-full" />
                   </motion.button>
                 </form>

@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { motion, useScroll, useTransform, AnimatePresence } from "motion/react";
-import { VILLA_IMAGE } from "@/app/assets/images";
+import { ROOM01_IMAGE, ROOM02_IMAGE, VILLA_IMAGE } from "@/app/assets/images";
 
 const galleryItems = [
   {
@@ -23,18 +23,18 @@ const galleryItems = [
   },
   {
     id: 3,
-    src: "https://images.unsplash.com/photo-1764760764956-fcb78be107a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjB2aWxsYSUyMGludGVyaW9yJTIwYmVkcm9vbSUyMHN1bnNldHxlbnwxfHx8fDE3NzI4MDU4MTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    alt: "Bedroom",
-    label: "Master Suite",
+    src: ROOM01_IMAGE,
+    alt: "Single room",
+    label: "Single room",
     colSpan: "",
     rowSpan: "",
     height: "h-44",
   },
   {
     id: 4,
-    src: "https://images.unsplash.com/photo-1760067537540-cc36c1700d7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cm9waWNhbCUyMGdhcmRlbiUyMHZpbGxhJTIwb3V0ZG9vciUyMGRpbmluZyUyMGx1eHVyeXxlbnwxfHx8fDE3NzI4MDU4MTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    alt: "Dining",
-    label: "Outdoor Dining",
+    src: ROOM02_IMAGE,
+    alt: "Couple room",
+    label: "Couple room",
     colSpan: "",
     rowSpan: "",
     height: "h-48",

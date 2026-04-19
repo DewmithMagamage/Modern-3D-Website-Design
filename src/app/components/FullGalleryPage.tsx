@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
-import { VILLA_IMAGE } from "@/app/assets/images";
+import { ROOM01_IMAGE, ROOM02_IMAGE, VILLA_IMAGE } from "@/app/assets/images";
 
 const galleryItems = [
   { id: 1, src: VILLA_IMAGE, alt: "Villa exterior" },
@@ -10,18 +10,15 @@ const galleryItems = [
     src: "https://images.unsplash.com/photo-1758612853656-def5033bccb5?auto=format&fit=crop&w=1400&q=80",
     alt: "Infinity pool",
   },
+  { id: 3, src: ROOM01_IMAGE, alt: "Single room" },
+  { id: 4, src: ROOM02_IMAGE, alt: "Couple room" },
   {
-    id: 3,
-    src: "https://images.unsplash.com/photo-1764760764956-fcb78be107a5?auto=format&fit=crop&w=1400&q=80",
-    alt: "Master suite",
-  },
-  {
-    id: 4,
+    id: 5,
     src: "https://images.unsplash.com/photo-1760067537540-cc36c1700d7e?auto=format&fit=crop&w=1400&q=80",
     alt: "Outdoor dining",
   },
   {
-    id: 5,
+    id: 6,
     src: "https://images.unsplash.com/photo-1722480417258-62f2fe681219?auto=format&fit=crop&w=1400&q=80",
     alt: "Private spa",
   },
@@ -76,7 +73,7 @@ export function FullGalleryPage({ onBack }) {
         {/* Caption */}
         <div className="absolute bottom-16 text-center">
           <p className="text-sm tracking-widest uppercase text-white/60">
-            Vila The Name
+            Villa The Name
           </p>
           <p className="text-xl">{image.alt}</p>
         </div>

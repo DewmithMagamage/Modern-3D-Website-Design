@@ -7,7 +7,7 @@ import { ExperiencesSection } from "./components/ExperiencesSection";
 import { ParallaxBanner } from "./components/ParallaxBanner";
 import { GallerySection } from "./components/GallerySection";
 import { AmenitiesSection } from "./components/AmenitiesSection";
-import { RatesSection } from "./components/RatesSection";
+import { RoomsSection } from "./components/RoomsSection";
 import { TestimonialsSection } from "./components/TestimonialsSection";
 import { MapSection } from "./components/MapSection";
 import { FAQSection } from "./components/FAQSection";
@@ -101,7 +101,7 @@ export default function App() {
               <ExperiencesSection />
               <GallerySection onViewFullGallery={() => setShowFullGallery(true)} />
               <AmenitiesSection />
-              <RatesSection />
+              <RoomsSection />
               <TestimonialsSection />
               <MapSection />
               <FAQSection />
