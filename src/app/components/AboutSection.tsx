@@ -14,7 +14,6 @@ const tags = [
   { label: "Private Pool", Icon: Waves },
   { label: "Concierge", Icon: Users },
   { label: "Chef Service", Icon: UtensilsCrossed },
-  { label: "Nature Trails", Icon: Compass },
 ];
 
 function StatCard({ stat, index }: { stat: typeof stats[0]; index: number }) {
