@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { motion, useScroll, useTransform, AnimatePresence } from "motion/react";
-import { ROOM01_IMAGE, ROOM02_IMAGE, VILLA_IMAGE } from "@/app/assets/images";
+import { INFINITY_POOL_IMAGE, ROOM01_IMAGE, ROOM02_IMAGE, VILLA_IMAGE } from "@/app/assets/images";
 
 const galleryItems = [
   {
@@ -14,9 +14,9 @@ const galleryItems = [
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1758612853656-def5033bccb5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjB2aWxsYSUyMHN3aW1taW5nJTIwcG9vbCUyMG5pZ2h0JTIwbGlnaHRzfGVufDF8fHx8MTc3MjgwNTgxOHww&ixlib=rb-4.1.0&q=80&w=1080",
-    alt: "Pool at Night",
-    label: "Pool at Dusk",
+    src: INFINITY_POOL_IMAGE,
+    alt: "Infinity Pool",
+    label: "Infinity Pool",
     colSpan: "",
     rowSpan: "",
     height: "h-44",
