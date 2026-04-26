@@ -34,11 +34,6 @@ const amenities = [
     desc: "A spacious rooftop area ideal for relaxing, enjoying the fresh air, and spending peaceful evenings.",
   },
   {
-    Icon: TreePine,
-    title: "Nature Trails",
-    desc: "Guided nature walks through the surrounding tropical forest and hills",
-  },
-  {
     Icon: ShieldCheck,
     title: "Full Privacy",
     desc: "Exclusive use only — the entire villa is yours, no shared spaces",
