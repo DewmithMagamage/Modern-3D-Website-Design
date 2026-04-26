@@ -5,14 +5,14 @@ import { WHATSAPP_BUSINESS_NUMBER } from "@/app/config";
 
 const socialLinks = [
   { label: "Instagram", Icon: Instagram, href: "https://instagram.com" },
-  { label: "Facebook", Icon: Facebook, href: "https://facebook.com" },
+  { label: "Facebook", Icon: Facebook, href: "https://www.facebook.com/villathename/" },
   { label: "WhatsApp", Icon: MessageCircle, href: `https://wa.me/${WHATSAPP_BUSINESS_NUMBER}` },
 ];
 
 const contactInfo = [
   { label: "No.43 Wewegodawaththa, Anangoda, Galle", Icon: MapPin },
-  { label: "stay@vilaTheName.com", Icon: Mail },
-  { label: "07 43 48 86 87", Icon: Phone },
+  { label: "vilathename@gmail.com", Icon: Mail },
+  { label: "+94 74 34 886 87", Icon: Phone },
 ];
 
 const navLinks = [
