@@ -29,11 +29,6 @@ const amenities = [
     desc: "A modern kitchen equipped with essential appliances, allowing guests to prepare their own meals comfortably during their stay.",
   },
   {
-    Icon: Car,
-    title: "Chauffeur",
-    desc: "24/7 chauffeur service for seamless transfers and local exploration",
-  },
-  {
     Icon: Building,
     title: "Rooftop Terrace",
     desc: "A spacious rooftop area ideal for relaxing, enjoying the fresh air, and spending peaceful evenings.",
