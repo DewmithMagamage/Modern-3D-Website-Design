@@ -14,6 +14,7 @@ import { FAQSection } from "./components/FAQSection";
 import { ContactSection } from "./components/ContactSection";
 import { Footer } from "./components/Footer";
 import { FullGalleryPage } from "./components/FullGalleryPage";
+import { LegalPage } from "./components/LegalPage";
 
 // Loading screen
 function LoadingScreen({ onComplete }: { onComplete: () => void }) {
@@ -75,6 +76,7 @@ function LoadingScreen({ onComplete }: { onComplete: () => void }) {
 export default function App() {
   const [loading, setLoading] = useState(true);
   const [showFullGallery, setShowFullGallery] = useState(false);
+  const [legalPage, setLegalPage] = useState<"privacy" | "terms" | null>(null);
 
   return (
     <div className="bg-white min-h-screen">
@@ -107,7 +109,10 @@ export default function App() {
               <FAQSection />
               <ContactSection />
             </main>
-            <Footer />
+            <Footer
+              onOpenPrivacy={() => setLegalPage("privacy")}
+              onOpenTerms={() => setLegalPage("terms")}
+            />
 
             {/* Full gallery "separate" page overlay */}
             <AnimatePresence>
@@ -126,6 +131,19 @@ export default function App() {
                         ?.scrollIntoView({ behavior: "smooth" });
                     }}
                   />
+                </motion.div>
+              )}
+            </AnimatePresence>
+
+            <AnimatePresence>
+              {legalPage && (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.25 }}
+                >
+                  <LegalPage type={legalPage} onBack={() => setLegalPage(null)} />
                 </motion.div>
               )}
             </AnimatePresence>

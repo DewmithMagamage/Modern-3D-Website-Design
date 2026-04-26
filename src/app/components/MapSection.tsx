@@ -3,10 +3,10 @@ import { motion, useInView } from "motion/react";
 import { MapPin, Navigation, Mountain, Clock, CalendarCheck } from "lucide-react";
 
 const nearbyAttractions = [
-  { name: "Kandy City Centre", distance: "45 min", Icon: Navigation },
-  { name: "Horton Plains", distance: "1.5 hrs", Icon: Mountain },
-  { name: "Tea Plantations", distance: "15 min", Icon: MapPin },
-  { name: "Colombo Airport", distance: "3.5 hrs", Icon: Clock },
+  { name: "Galle Fort", distance: "20 min", Icon: Navigation },
+  { name: "Unawatuna Beach", distance: "30 min", Icon: Mountain },
+  { name: "Galle City Centre", distance: "18 min", Icon: MapPin },
+  { name: "Bandaranaike Airport", distance: "2.5 hrs", Icon: Clock },
 ];
 
 export function MapSection() {
@@ -53,7 +53,7 @@ export function MapSection() {
             className="text-[#4a4a4a] text-sm max-w-xl mx-auto leading-relaxed"
             style={{ fontFamily: "'Inter', sans-serif" }}
           >
-            Nestled in the lush tropical highlands of Sri Lanka, Vila The Name is your gateway to paradise.
+            Located in Anangoda, Galle, Vila The Name offers a peaceful stay with quick access to the South Coast's top attractions.
           </p>
         </motion.div>
 
@@ -123,7 +123,7 @@ export function MapSection() {
                       className="text-[#6b6b6b] text-xs mt-0.5"
                       style={{ fontFamily: "'Inter', sans-serif" }}
                     >
-                      Tropical Highlands, Sri Lanka
+                      No.43 Wewegodawaththa, Anangoda, Galle
                     </p>
                   </div>
                 </div>

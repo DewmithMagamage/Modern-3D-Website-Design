@@ -5,9 +5,9 @@ import { LOGO_IMAGE } from "@/app/assets/images";
 import { whatsappSendUrl } from "@/app/config";
 
 const contactDetails = [
-  { label: "Location", value: "Tropical Highlands, Sri Lanka", Icon: MapPin },
+  { label: "Location", value: "No.43 Wewegodawaththa, Anangoda, Galle", Icon: MapPin },
   { label: "Email", value: "stay@vilaTheName.com", Icon: Mail },
-  { label: "Phone", value: "+94 77 000 0000", Icon: Phone },
+  { label: "Phone", value: "07 43 48 86 87", Icon: Phone },
   { label: "Check-in / Check-out", value: "3:00 PM / 11:00 AM", Icon: Clock },
 ];
 

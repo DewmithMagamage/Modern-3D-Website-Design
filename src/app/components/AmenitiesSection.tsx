@@ -9,6 +9,7 @@ import {
   TreePine,
   ShieldCheck,
   CalendarCheck,
+  Wifi,
 } from "lucide-react";
 
 const amenities = [
@@ -46,6 +47,11 @@ const amenities = [
     Icon: ShieldCheck,
     title: "Full Privacy",
     desc: "Exclusive use only — the entire villa is yours, no shared spaces",
+  },
+  {
+    Icon: Wifi,
+    title: "Free WiFi",
+    desc: "Complimentary high-speed WiFi throughout the villa for work, streaming, and staying connected.",
   },
 ];
 

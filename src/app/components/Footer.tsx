@@ -10,9 +10,9 @@ const socialLinks = [
 ];
 
 const contactInfo = [
-  { label: "Tropical Highlands, Sri Lanka", Icon: MapPin },
+  { label: "No.43 Wewegodawaththa, Anangoda, Galle", Icon: MapPin },
   { label: "stay@vilaTheName.com", Icon: Mail },
-  { label: "+94 77 000 0000", Icon: Phone },
+  { label: "07 43 48 86 87", Icon: Phone },
 ];
 
 const navLinks = [
@@ -26,7 +26,13 @@ const navLinks = [
   { label: "Contact", href: "#contact" },
 ];
 
-export function Footer() {
+export function Footer({
+  onOpenPrivacy,
+  onOpenTerms,
+}: {
+  onOpenPrivacy: () => void;
+  onOpenTerms: () => void;
+}) {
   const scrollTo = (href: string) => {
     document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
   };
@@ -129,15 +135,20 @@ export function Footer() {
             Where Serenity Finds Its Name
           </p>
           <div className="flex gap-6">
-            {["Privacy Policy", "Terms"].map((t) => (
-              <span
-                key={t}
-                className="text-[#4a4a4a]/50 text-xs hover:text-[#4a4a4a] cursor-pointer transition-colors"
-                style={{ fontFamily: "'Inter', sans-serif" }}
-              >
-                {t}
-              </span>
-            ))}
+            <button
+              onClick={onOpenPrivacy}
+              className="text-[#4a4a4a]/50 text-xs hover:text-[#4a4a4a] cursor-pointer transition-colors"
+              style={{ fontFamily: "'Inter', sans-serif" }}
+            >
+              Privacy Policy
+            </button>
+            <button
+              onClick={onOpenTerms}
+              className="text-[#4a4a4a]/50 text-xs hover:text-[#4a4a4a] cursor-pointer transition-colors"
+              style={{ fontFamily: "'Inter', sans-serif" }}
+            >
+              Terms
+            </button>
           </div>
         </div>
       </div>
