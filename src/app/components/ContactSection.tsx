@@ -7,7 +7,7 @@ import { whatsappSendUrl } from "@/app/config";
 const contactDetails = [
   { label: "Location", value: "No.43 Wewegodawaththa, Anangoda, Galle", Icon: MapPin },
   { label: "Email", value: "vilathename@gmail.com", Icon: Mail },
-  { label: "Phone", value: "+94 74 34 886 87", Icon: Phone },
+  { label: "Phone", value: "07 43 48 86 87", Icon: Phone },
   { label: "Check-in / Check-out", value: "3:00 PM / 11:00 AM", Icon: Clock },
 ];
 

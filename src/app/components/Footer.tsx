@@ -12,7 +12,7 @@ const socialLinks = [
 const contactInfo = [
   { label: "No.43 Wewegodawaththa, Anangoda, Galle", Icon: MapPin },
   { label: "vilathename@gmail.com", Icon: Mail },
-  { label: "+94 74 34 886 87", Icon: Phone },
+  { label: "07 43 48 86 87", Icon: Phone },
 ];
 
 const navLinks = [

@@ -77,6 +77,7 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [showFullGallery, setShowFullGallery] = useState(false);
   const [legalPage, setLegalPage] = useState<"privacy" | "terms" | null>(null);
+  const overlayOpen = showFullGallery || legalPage !== null;
 
   return (
     <div className="bg-white min-h-screen">
@@ -96,7 +97,7 @@ export default function App() {
             transition={{ duration: 0.6 }}
           >
             <Navbar />
-            <main className={showFullGallery ? "pointer-events-none blur-sm" : ""}>
+            <main className={overlayOpen ? "pointer-events-none blur-sm" : ""}>
               <HeroSection />
               <AboutSection />
               <ParallaxBanner />

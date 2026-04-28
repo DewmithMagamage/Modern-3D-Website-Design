@@ -76,7 +76,7 @@ export function LegalPage({
               <section>
                 <h2 className="text-[#1a1a1a] text-lg mb-2">4. Contact</h2>
                 <p>
-                  For privacy-related requests, contact us at stay@vilaTheName.com or
+                  For privacy-related requests, contact us at vilathename@gmail.com or
                   07 43 48 86 87.
                 </p>
               </section>

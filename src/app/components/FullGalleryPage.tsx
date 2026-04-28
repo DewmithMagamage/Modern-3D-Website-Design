@@ -1,15 +1,11 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
-import { ROOM01_IMAGE, ROOM02_IMAGE, VILLA_IMAGE } from "@/app/assets/images";
+import { INFINITY_POOL_IMAGE, ROOM01_IMAGE, ROOM02_IMAGE, VILLA_IMAGE } from "@/app/assets/images";
 
 const galleryItems = [
   { id: 1, src: VILLA_IMAGE, alt: "Villa exterior" },
-  {
-    id: 2,
-    src: "https://images.unsplash.com/photo-1758612853656-def5033bccb5?auto=format&fit=crop&w=1400&q=80",
-    alt: "Infinity pool",
-  },
+  { id: 2,src: INFINITY_POOL_IMAGE,alt: "Infinity pool",},
   { id: 3, src: ROOM01_IMAGE, alt: "Single room" },
   { id: 4, src: ROOM02_IMAGE, alt: "Couple room" },
   {
@@ -24,10 +20,10 @@ const galleryItems = [
   },
 ];
 
-export function FullGalleryPage({ onBack }) {
+export function FullGalleryPage({ onBack }: { onBack: () => void }) {
   const [[index, direction], setIndex] = useState([0, 0]);
 
-  const paginate = (newDirection) => {
+  const paginate = (newDirection: number) => {
     setIndex([
       (index + newDirection + galleryItems.length) % galleryItems.length,
       newDirection,
@@ -49,7 +45,7 @@ export function FullGalleryPage({ onBack }) {
           Back
         </button>
 
-        <button onClick={onBack}>
+        <button onClick={onBack} aria-label="Close gallery">
           <X size={22} />
         </button>
       </div>
@@ -82,6 +78,7 @@ export function FullGalleryPage({ onBack }) {
         <button
           onClick={() => paginate(-1)}
           className="absolute left-10 bg-black/40 p-3 rounded-full hover:bg-black/70"
+          aria-label="Previous image"
         >
           <ChevronLeft size={24} />
         </button>
@@ -89,6 +86,7 @@ export function FullGalleryPage({ onBack }) {
         <button
           onClick={() => paginate(1)}
           className="absolute right-10 bg-black/40 p-3 rounded-full hover:bg-black/70"
+          aria-label="Next image"
         >
           <ChevronRight size={24} />
         </button>
